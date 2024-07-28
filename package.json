@@ -1,15 +1,8 @@
 {
-  "name": "taro4",
+  "name": "taro4-template",
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "taro4",
-  "templateInfo": {
-    "name": "default",
-    "typescript": true,
-    "css": "None",
-    "framework": "React"
-  },
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:alipay": "taro build --type alipay",
