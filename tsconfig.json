@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "removeComments": false,
     "preserveConstEnums": true,
-    "moduleResolution": "node",
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
+    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
@@ -16,15 +16,10 @@
     "rootDir": ".",
     "jsx": "react-jsx",
     "allowJs": true,
-    "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "paths": {
-      // TS5090 leading './'
-      "@/*": ["./src/*"]
-    }
   },
-  "include": ["./src", "./types", "./config"],
-  "compileOnSave": false
+  "include": [
+    "./src",
+    "./types",
+    "./config"
+  ]
 }

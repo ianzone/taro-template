@@ -1,15 +1,10 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import './index.css'
+import { useLoad } from '@tarojs/taro';
+import { Box } from '../../components';
 
-export default function Index () {
+export default function Index() {
   useLoad(() => {
-    console.log('Page loaded.')
-  })
+    console.log('Page loaded.');
+  });
 
-  return (
-    <View className='index'>
-      <Text>Hello world!</Text>
-    </View>
-  )
+  return <Box />;
 }
