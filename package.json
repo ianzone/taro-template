@@ -17,36 +17,39 @@
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:h5": "npm run build:h5 -- --watch"
   },
-  "browserslist": ["defaults and fully supports es6-module", "maintained node versions"],
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
   "author": "",
   "dependencies": {
-    "@babel/runtime": "^7.24.4",
+    "@babel/runtime": "^7.25.0",
     "@tarojs/components": "4.0.3",
     "@tarojs/helper": "4.0.3",
-    "@tarojs/plugin-platform-weapp": "4.0.3",
+    "@tarojs/plugin-framework-react": "4.0.3",
     "@tarojs/plugin-platform-alipay": "4.0.3",
     "@tarojs/plugin-platform-h5": "4.0.3",
+    "@tarojs/plugin-platform-weapp": "4.0.3",
+    "@tarojs/react": "4.0.3",
     "@tarojs/runtime": "4.0.3",
     "@tarojs/shared": "4.0.3",
     "@tarojs/taro": "4.0.3",
-    "@tarojs/plugin-framework-react": "4.0.3",
-    "@tarojs/react": "4.0.3",
-    "react-dom": "^18.0.0",
-    "react": "^18.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/core": "^7.24.9",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/preset-react": "^7.24.7",
     "@tarojs/cli": "4.0.3",
     "@tarojs/vite-runner": "4.0.3",
+    "@types/react": "^18.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
     "babel-preset-taro": "4.0.3",
-    "terser": "^5.30.4",
-    "vite": "^4.2.0",
-    "@babel/preset-react": "^7.24.1",
-    "@types/react": "^18.0.0",
-    "@vitejs/plugin-react": "^4.3.0",
-    "react-refresh": "^0.14.0",
-    "typescript": "^5.4.5",
-    "postcss": "^8.4.38"
+    "postcss": "^8.4.40",
+    "react-refresh": "^0.14.2",
+    "terser": "^5.31.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
   }
 }
