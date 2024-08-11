@@ -16,10 +16,7 @@
     "rootDir": ".",
     "jsx": "react-jsx",
     "allowJs": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "./src",
-    "./types",
-    "./config"
-  ]
+  "include": ["./src", "./types", "./config"]
 }
