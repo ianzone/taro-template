@@ -1,20 +1,18 @@
 import { View } from '@tarojs/components';
 import { navigateTo } from '@tarojs/taro';
-import { TitleList } from 'src/containers';
 import { AtButton } from 'taro-ui';
 
-export default function Index() {
+export default function Detail() {
   return (
-    <View>
-      <TitleList />
+    <View className='index'>
       <AtButton
         type='primary'
         circle
         onClick={() => {
-          navigateTo({ url: '/pages/detail/detail' });
+          navigateTo({ url: '/pages/index/index' });
         }}
       >
-        跳转到详情页
+        跳转到首页
       </AtButton>
     </View>
   );

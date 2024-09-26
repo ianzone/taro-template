@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import { type UserConfigExport, defineConfig } from '@tarojs/cli';
 import devConfig from './dev';
 import prodConfig from './prod';
@@ -24,6 +25,9 @@ export default defineConfig<'vite'>(async (merge) => {
     },
     framework: 'react',
     compiler: 'vite',
+    alias: {
+      src: resolve(__dirname, '..', 'src'),
+    },
     mini: {
       postcss: {
         pxtransform: {
