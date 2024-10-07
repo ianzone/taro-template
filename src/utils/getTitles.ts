@@ -1,10 +1,11 @@
-import { getArticles } from 'src/services';
+import { toutiao } from 'src/services';
 
 export async function getTitles() {
-  const articles = await getArticles();
-  return articles.map((article) => {
+  const contents = await toutiao();
+
+  return contents.map((article) => {
     return {
-      id: article.id,
+      id: article.item_id,
       title: article.title,
     };
   });

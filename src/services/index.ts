@@ -1,1 +1,1 @@
-export * from './sspai';
+export * from './toutiao';
