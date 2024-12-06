@@ -1,7 +1,7 @@
 import { Button } from '@taroify/core';
 import { Text, View } from '@tarojs/components';
 import { useLoad } from '@tarojs/taro';
-import { navigateTo } from '@tarojs/taro';
+import { Router } from 'tarojs-router-next';
 import './index.css';
 
 export default function Index() {
@@ -15,7 +15,7 @@ export default function Index() {
       <Button
         color='primary'
         onClick={() => {
-          navigateTo({ url: '/pages/index/index' });
+          Router.toIndex();
         }}
       >
         跳转到index

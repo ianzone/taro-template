@@ -1,8 +1,8 @@
 import { Button, ConfigProvider } from '@taroify/core';
 import { View } from '@tarojs/components';
 import { useLoad } from '@tarojs/taro';
-import { navigateTo } from '@tarojs/taro';
 import { Title } from 'src/components';
+import { Router } from 'tarojs-router-next';
 import './index.css';
 
 export default function Index() {
@@ -27,7 +27,7 @@ export default function Index() {
         <Button
           color='primary'
           onClick={() => {
-            navigateTo({ url: '/pages/detail/index' });
+            Router.toDetail();
           }}
         >
           跳转到详情页

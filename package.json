@@ -25,7 +25,8 @@
     "@tarojs/shared": "4.0.8",
     "@tarojs/taro": "4.0.8",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tarojs-router-next": "^3.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -46,6 +47,7 @@
     "lefthook": "^1.9.0",
     "postcss": "^8.4.49",
     "react-refresh": "^0.16.0",
+    "tarojs-router-next-plugin": "^3.4.6",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "^5.7.2",
     "webpack": "^5.97.1"
