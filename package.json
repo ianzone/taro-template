@@ -7,7 +7,10 @@
     "build:h5": "taro build --type h5",
     "dev:weapp": "taro build --type weapp --watch",
     "dev:alipay": "taro build --type alipay --watch",
-    "dev:h5": "taro build --type h5 --watch"
+    "dev:h5": "taro build --type h5 --watch",
+    "lint": "biome check --fix src",
+    "postinstall": "lefthook install",
+    "commit": "git add -A && git-cz"
   },
   "browserslist": ["defaults and fully supports es6-module", "maintained node versions"],
   "dependencies": {
@@ -28,6 +31,7 @@
     "@babel/core": "^7.26.0",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-react": "^7.26.3",
+    "@biomejs/biome": "^1.9.4",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@tarojs/cli": "4.0.8",
     "@tarojs/taro-loader": "4.0.8",
@@ -37,10 +41,20 @@
     "@types/webpack-env": "^1.18.5",
     "babel-plugin-import": "^1.13.8",
     "babel-preset-taro": "4.0.8",
+    "biome-extends": "^1.0.1",
+    "git-cz": "^4.9.0",
+    "lefthook": "^1.9.0",
     "postcss": "^8.4.49",
     "react-refresh": "^0.16.0",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "^5.7.2",
     "webpack": "^5.97.1"
-  }
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "@parcel/watcher",
+    "@tarojs/binding",
+    "core-js",
+    "core-js-pure"
+  ]
 }
