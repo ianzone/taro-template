@@ -17,7 +17,7 @@ export default defineConfig<'webpack5'>(async (merge) => {
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
-    plugins: ['tarojs-router-next-plugin'],
+    plugins: ['tarojs-router-next-plugin', '@tarojs/plugin-http'],
     defineConstants: {},
     copy: {
       patterns: [],
