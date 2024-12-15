@@ -1,3 +1,5 @@
-组件库：[taroify](https://taroify.github.io/taroify.com/introduce/)
-路由库：[tarojs-router-next](https://lblblong.github.io/tarojs-router-next/guide)
-网络请求：[@tarojs/plugin-http](https://docs.taro.zone/docs/request)
+- 组件库：[taroify](https://taroify.github.io/taroify.com/introduce/)
+- 路由库：[tarojs-router-next](https://lblblong.github.io/tarojs-router-next/guide)
+- 网络请求：[@tarojs/plugin-http](https://docs.taro.zone/docs/request)
+- 状态管理: zustand?
+- 其他物料: https://docs.taro.zone/docs/treasures/

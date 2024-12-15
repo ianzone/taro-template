@@ -6,23 +6,24 @@ import './index.css';
 import { useEffect, useState } from 'react';
 
 export default function Index() {
-  const [title, setTitle] = useState('');
+  const [text, setText] = useState('');
   useEffect(() => {
-    getData().then((title) => {
-      setTitle(title);
+    getData().then((text) => {
+      console.log(text);
+      setText(text);
     });
   }, []);
 
   return (
     <View className='index'>
-      <Text>{title}</Text>
+      <Text>{text}</Text>
       <Button
         color='primary'
         onClick={() => {
           Router.toIndex();
         }}
       >
-        跳转到index
+        跳转到首页
       </Button>
     </View>
   );
