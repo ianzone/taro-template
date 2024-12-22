@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["biome-extends/base"],
-  "formatter": {
-    "lineEnding": "crlf"
+  "files": {
+    "ignore": ["project.config.json", "project.private.config.json"]
   }
 }
