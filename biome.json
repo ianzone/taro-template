@@ -1,4 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["biome-extends/base"]
+  "extends": ["biome-extends/base"],
+  "formatter": {
+    "lineEnding": "crlf"
+  }
 }
