@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "removeComments": false,
     "preserveConstEnums": true,
     "experimentalDecorators": true,
@@ -17,6 +17,8 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "paths": {
       "src/*": ["./src/*"],

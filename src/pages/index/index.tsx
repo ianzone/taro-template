@@ -1,15 +1,10 @@
 import { Button, ConfigProvider } from '@taroify/core';
 import { View } from '@tarojs/components';
-import { useLoad } from '@tarojs/taro';
 import { Title } from 'src/components';
 import { Router } from 'tarojs-router-next';
 import './index.css';
 
 export default function Index() {
-  useLoad(() => {
-    console.log('Page loaded.');
-  });
-
   return (
     <ConfigProvider
       theme={{
@@ -23,7 +18,7 @@ export default function Index() {
       }}
     >
       <View className='index'>
-        <Title>Hello world!</Title>
+        <Title>Hello world!!!</Title>
         <Button
           color='primary'
           onClick={() => {
