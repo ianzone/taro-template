@@ -2,6 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "taro-template",
   "description": "",
+  "appid": "wxf28f7739e124b40d",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -15,7 +16,8 @@
       "outputPath": ""
     },
     "swc": false,
-    "ignoreUploadUnusedFiles": true
+    "ignoreUploadUnusedFiles": true,
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
   "libVersion": "3.7.2",
