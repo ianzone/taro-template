@@ -1,6 +1,7 @@
 {
-  "extends": "es-proj/tsconfig/taro",
+  "extends": "@es-proj/configs/tsconfig.taro",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "src/*": ["./src/*"],
       "config/*": ["./config/*"],
