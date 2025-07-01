@@ -21,7 +21,7 @@ pre-commit:
           - name: gitleaks
             run: gitleaks protect --staged --no-banner
           - name: audit
-            run: echo audit
+            run: bun audit || true
           - name: license
             run: echo license
           #SECTION - Misc
