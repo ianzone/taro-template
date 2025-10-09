@@ -28,7 +28,7 @@ module.exports = {
         libraryDirectory: '',
         camel2DashComponentName: false,
         style: () => '@taroify/icons/style',
-        customName: (name) =>
+        customName: (/** @type {string} */ name) =>
           name === 'Icon' ? '@taroify/icons/van/VanIcon' : `@taroify/icons/${name}`,
       },
       '@taroify/icons',
