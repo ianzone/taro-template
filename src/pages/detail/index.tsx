@@ -1,12 +1,12 @@
 import { Button } from '@taroify/core';
 import { Text, View } from '@tarojs/components';
+import { navigateTo } from '@tarojs/taro';
 import { getData } from 'src/services/api';
-import { Router } from 'tarojs-router-next';
 import './index.css';
 import { useEffect, useState } from 'react';
 
 export default function Index() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('text');
   useEffect(() => {
     getData().then((text) => {
       console.log(text);
@@ -20,7 +20,9 @@ export default function Index() {
       <Button
         color='primary'
         onClick={() => {
-          Router.toIndex();
+          navigateTo({
+            url: '/pages/index/index',
+          });
         }}
       >
         跳转到首页

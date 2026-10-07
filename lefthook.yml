@@ -22,8 +22,6 @@ pre-commit:
             run: gitleaks protect --staged --no-banner
           - name: audit
             run: bun audit || true
-          - name: license
-            run: echo license
           #SECTION - Misc
           - name: knip
             run: na knip --no-exit-code --no-config-hints

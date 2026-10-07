@@ -1,8 +1,8 @@
 import { Button, ConfigProvider } from '@taroify/core';
 import { View } from '@tarojs/components';
 import { Title } from 'src/components';
-import { Router } from 'tarojs-router-next';
 import './index.css';
+import { navigateTo } from '@tarojs/taro';
 
 export default function Index() {
   return (
@@ -10,8 +10,6 @@ export default function Index() {
       theme={{
         rateIconFullColor: '#07c160',
         sliderTrackHeight: '4px',
-        sliderButtonWidth: '20px',
-        sliderButtonHeight: '20px',
         sliderActiveBackgroundColor: '#07c160',
         buttonPrimaryBorderColor: '#07c160',
         buttonPrimaryBackgroundColor: '#07c160',
@@ -22,7 +20,9 @@ export default function Index() {
         <Button
           color='primary'
           onClick={() => {
-            Router.toDetail();
+            navigateTo({
+              url: '/pages/detail/index',
+            });
           }}
         >
           跳转到详情页
