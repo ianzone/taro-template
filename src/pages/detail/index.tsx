@@ -1,7 +1,6 @@
-import { Button } from '@taroify/core';
-import { Text, View } from '@tarojs/components';
-import { navigateTo } from '@tarojs/taro';
-import { getData } from 'src/services/api';
+import { navigateTo } from 'virtual:taro/api';
+import { Button, Text, View } from 'virtual:taro/components';
+import { getData } from '../../services/api';
 import './index.css';
 import { useEffect, useState } from 'react';
 
@@ -15,10 +14,10 @@ export default function Index() {
   }, []);
 
   return (
-    <View className='index'>
+    <View className='detail-page'>
       <Text>{text}</Text>
       <Button
-        color='primary'
+        className='primary-action'
         onClick={() => {
           navigateTo({
             url: '/pages/index/index',

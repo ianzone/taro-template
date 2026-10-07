@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "wechat-devtools": {
+      "command": "wechatide",
+      "args": ["mcp", "--token", "${input:wechatide-mcp-token}"]
+    }
+  },
+  "inputs": [
+    {
+      "id": "wechatide-mcp-token",
+      "type": "promptString",
+      "description": "WechatIDE MCP Token",
+      "password": true
+    }
+  ]
+}

@@ -1,34 +1,10 @@
 {
-  "miniprogramRoot": "dist/",
-  "projectname": "taro-template",
-  "description": "",
+  "miniprogramRoot": "dist/wx/",
+  "projectname": "vpt-template",
   "appid": "wxf28f7739e124b40d",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "enhance": false,
-    "compileHotReLoad": false,
-    "postcss": false,
-    "minified": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "swc": false,
-    "ignoreUploadUnusedFiles": true,
-    "packNpmRelationList": []
-  },
   "compileType": "miniprogram",
-  "libVersion": "3.7.2",
-  "srcMiniprogramRoot": "dist/",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "condition": {},
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
+  "setting": {
+    "urlCheck": false,
+    "compileHotReLoad": true
   }
 }

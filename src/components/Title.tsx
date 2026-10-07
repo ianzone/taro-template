@@ -1,4 +1,4 @@
-import { View } from '@tarojs/components';
+import { View } from 'virtual:taro/components';
 import type { ReactNode } from 'react';
 
 interface TitleProps {
@@ -6,5 +6,5 @@ interface TitleProps {
 }
 
 export function Title({ children }: TitleProps) {
-  return <View className='at-article__h2'>{children}</View>;
+  return <View className='title'>{children}</View>;
 }

@@ -1,11 +1,4 @@
 {
-  "extends": "@es-proj/configs/tsconfig.taro",
-  "compilerOptions": {
-    "paths": {
-      "src/*": ["./src/*"],
-      "config/*": ["./config/*"],
-      "types/*": ["./types/*"]
-    }
-  },
-  "include": ["./src", "./types", "./config"]
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
